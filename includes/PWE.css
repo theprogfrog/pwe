@@ -24,8 +24,13 @@ body {
 
 }
 
+.btn btn-default btn-lg { 
+	font-size: 60px; /* dit werkt dus niet.. waarom niet? 
+	ik wil de buttons in jumpto gewoon wat groter*/
+}
+
 .jumpto .row {
-	
+	margin: 0;
 	text-align: center;
 	background-color: gray;
 	font-family: 'Orbitron', sans-serif;
@@ -34,23 +39,23 @@ body {
 }
 
 .jumpto .row ul {
+	
+	margin: 0;
 	padding: 0 0 0 1%;
 	font-family: 'Orbitron', sans-serif;
     
 }
 
 .jumpto .row li { /*hoe kan het dat Projects button niet op verticale middenlijn zit? Nadeel li items? Nu tijdelijk opgelost met ul padding */
+	
 	text-align: center;
 	display: inline-block;
-	margin: 10% 10%;
+	margin: 5% 10%;
 	padding: 0;
 
 }
 
-.about a, .projects a, .contact a {
-	text-decoration: none;
-	color: black; /* hover moet ook nog even neat */
-}
+
 
 .about .row {
 	text-align: center;
@@ -95,7 +100,7 @@ body {
 
 }
 
-.contact .row { /*waarom ziet tel nr er anders uit?*/
+.contact .row { 
 	
 	font-family: 'Orbitron', sans-serif;
 	text-align: center;
