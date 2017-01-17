@@ -27,11 +27,9 @@ jQuery(document).ready(function($){
 
 }); 
 
-//if click on about, go to about,
-//if click on project, go to projects
-//if click on contact, go to contact
+//if click on an 'a' in jumpto, goes to the section with the #id it links to
 $(document).on('click', 'a', function(event){
-    event.preventDefault();
+    //event.preventDefault();
 
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top

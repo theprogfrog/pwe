@@ -1,6 +1,7 @@
 body {
 	display: block;
 	box-sizing: border-box;
+	overflow-x: hidden;
 	
 }
 
@@ -117,7 +118,7 @@ body {
 .cd-top {
 	position: fixed;
 	bottom: 30px; /* bottom & right zijn nodig om fixed button te zien. float alleen werkt niet, ik weet alleen niet waarom. */
-	right: -460px; /* waarom in de min hier? */
+	right: -460px; /* waarom in de min hier? ws vanwege bootstrap columns */
 	visibility: hidden;
 	opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
