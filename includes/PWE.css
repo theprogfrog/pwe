@@ -1,0 +1,142 @@
+body {
+	display: block;
+	box-sizing: border-box;
+	
+}
+
+.title img {
+	width: 40%;
+}
+
+.title .row {
+	
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	padding: 10% 0 15% 0;
+	
+
+}
+
+.title h1 {
+	font-size: 56px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 900;
+
+}
+
+.jumpto .row {
+	
+	text-align: center;
+	background-color: gray;
+	font-family: 'Orbitron', sans-serif;
+	/* geen height hier ivm is al responsive in div */
+	
+}
+
+.jumpto .row ul {
+	padding: 0 0 0 1%;
+	font-family: 'Orbitron', sans-serif;
+    
+}
+
+.jumpto .row li { /*hoe kan het dat Projects button niet op verticale middenlijn zit? Nadeel li items? Nu tijdelijk opgelost met ul padding */
+	text-align: center;
+	display: inline-block;
+	margin: 10% 10%;
+	padding: 0;
+
+}
+
+.about a, .projects a, .contact a {
+	text-decoration: none;
+	color: black; /* hover moet ook nog even neat */
+}
+
+.about .row {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	background: url("backgroundwhite.jpg") repeat-y center center;
+	background-size: 100%;
+
+	/* geen height hier ivm is al responsive in div */
+}
+
+.about .row p {
+	margin: 5% 20%;
+
+}
+
+.about h3 {
+	padding: 5% 0 0 0;
+	font-weight: 900;
+
+}
+
+.projects .row {
+	
+	text-align: center;
+	padding: 10% 0;
+	font-family: 'Orbitron', sans-serif;
+	
+}
+
+.projects img {
+	width: 100%;
+	padding: 5% 0 0 0;
+}
+
+.projects h3 {
+	font-weight: 900;
+
+}
+
+.projects h4 {
+	padding: 10% 0 0 0;
+
+}
+
+.contact .row { /*waarom ziet tel nr er anders uit?*/
+	
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	background-color: lightgray;
+
+}
+
+/* Gedownload van https://codyhouse.co/gem/back-to-top/  */
+
+.cd-top img {
+	width: 15%;
+}
+
+.cd-top {
+	position: fixed;
+	bottom: 30px; /* bottom & right zijn nodig om fixed button te zien. float alleen werkt niet, ik weet alleen niet waarom. */
+	right: -460px; /* waarom in de min hier? */
+	visibility: hidden;
+	opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+}
+
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}

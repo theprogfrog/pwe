@@ -1,0 +1,159 @@
+<!--Project personal website
+
+Personal Website
+
+A personal site serves a similar, but distinct, role to your resume. Its primary purpose is to display your portfolio.
+
+Website requirements
+
+a way to contact you
+a description of who you are
+a presentation your projects. Select only the work which has a high degree of polish, and secondarily showcases your most complex technical achievements
+guidelines for showcasing a project. Have the following:
+a screenshot(s) of the best part of the site
+description of the project / technologies used
+a link to the site
+a link to the source code
+Process requirements
+
+use github
+commit often and with descriptive messages
+Structure requirements
+
+position your html files in the root directory
+position css and js files in a folder called 'includes'
+comply with W3C code standards
+no not use external CDN resources, host everything yourself
+Recommendations & challenges
+
+find a way to use the same head and footer sections without having duplicate code
+use a framework like Bootstrap or Materialize
+optimize your website for fast delivery
+consider page and resource size
+consider minification
+use Google page speed insights and gtmterix
+Peripheral resources
+
+find out what is needed to have your website live on the internet
+consider domains
+consider servers and their software
+consider the specific needs for your website
+find out how to deal with deployment and changes in your website
+Design guidelines and inspiration
+
+this page is one of your faces online, make it look good
+consider the needs and preferences of your target audience-->
+
+<!DOCTYPE>
+<html>
+
+<head> 
+	<title>Jane Doe</title>
+	<link rel="stylesheet" type="text/css" href="includes/PWE.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,900" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	
+</head>
+
+<body>
+
+
+<!--title-->
+<div class="title">
+	<div class="row">
+		<div class="col-md-12">
+			<img src="logodraw2.jpeg">
+			<h1>Jane Doe</h1>
+			<h2>Web Developer</h2>
+			<h2>Portfolio</h2>
+		</div>
+	</div>
+</div>
+
+
+<!--jumpto-->
+<!-- Ik wil als ik op buttons klik naar desbetreffende section gaan, ipv naar aparte pages te gaan.-->
+<div class="jumpto">
+	<div class="row">
+		<div class="col-md-12">
+			<nav>
+				<ul>
+					<li>
+						<a href="#ab"><button type="button" class="btn btn-default btn-lg">  About  </button></a>
+					</li>
+					<li>
+						<a href="#pr"><button type="button" class="btn btn-default btn-lg">  Projects  </button></a>
+					</li>
+					<li>
+						<a href="#co"><button type="button" class="btn btn-default btn-lg">  Contact  </button></a>
+					</li>
+				</ul>  
+			</nav>
+		</div>
+	</div>
+</div>
+
+<!--about-->
+<div class="about" >
+	<div class="row">
+		<div class="col-md-12">
+			<h3 id="ab">About</h3>
+			<p>Jane Doe Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+
+			<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+
+			<p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+		</div>
+	</div>
+</div>
+
+<!--projects-->
+<div class="projects">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 id="pr">Projects</h3>
+			<h4>Clara Nam</h4>
+				<a href="http://clara-nam.com/thesis/"><img src="claranam.png"></a>
+				<p>At Clara Nam these and these tehcniques were used.</p>
+			<h4>The Future Forward</h4>
+				<a href="https://thefutureforward.com/"><img src="thefutureforward.png"></a>
+				<p>At The Future Forward these and these tehcniques were used.</p>
+			<h4>Andrea Pedrina</h4>
+				<a href="http://andreapedrina.com/"><img src="andreapedrina.png"></a>
+				<p>At Andrea Pedrina these and these tehcniques were used.</p>
+		</div>
+	</div>
+</div>
+
+<!--contact = footer-->
+<div class="contact">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 id="co">Contact</h3>
+			<p><span class="glyphicon glyphicon-envelope"></span>  janedoe@janedoe.com</p>
+			<p><span class="glyphicon glyphicon-phone-alt">  0630303030</span></p>
+			<p><span class="glyphicon glyphicon-home"></span>  Dam 1, 1010 XX, Amsterdam</p>
+		</div>
+	</div>
+</div>
+
+<!-- back to top -->
+<a href="#0" class="cd-top"><img src="backtotopbutton.png"></a>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--my js file -->
+<script src="includes/PWE.js"></script>
+
+</body>
+
+
+
+</html>
